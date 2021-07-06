@@ -87,9 +87,9 @@ class SurrogateMapping(object):
             self.map_none()    
         elif self.method == 1:
             self.map_on_cluster(features, labels)    
-        elif self.method == 1:
-            self.map_on_frequency(labels)
         elif self.method == 2:
+            self.map_on_frequency(labels)
+        elif self.method == 3:
             self.map_on_topk(labels)
         else:
             pass
